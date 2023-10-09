@@ -28,6 +28,8 @@ class MyApp extends StatelessWidget {
 
 // import 'dart:async';
 // import 'package:flutter/material.dart';
+// import 'package:flutter/cupertino.dart';
+// // import 'package:flutter/fab_widget.dart';
 
 // void main() => runApp(const MyApp());
 
@@ -36,9 +38,16 @@ class MyApp extends StatelessWidget {
 
 //   @override
 //   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       title: 'Contoh Date Picker',
-//       home: MyHomePage(title: 'Contoh Date Picker'),
+//     return MaterialApp(
+//       home: Scaffold(
+//         floatingActionButton: FloatingActionButton(
+//           onPressed: () {
+//             // Add your onPressed code here!
+//           },
+//           child: const Icon(Icons.thumb_up),
+//           backgroundColor: Colors.pink,
+//         ),
+//       ),
 //     );
 //   }
 // }

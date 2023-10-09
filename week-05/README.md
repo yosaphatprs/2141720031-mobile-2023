@@ -34,13 +34,32 @@ Pada bagian pertama, menambahkan sebuah widget MyTextWidget dengan isi nama saya
 
 ![Praktikum 3](docs/03.jpg)
 
+Terdapat kendala ketika saya menjalankan aplikasi flutter pada device fisik saya, yaitu tidak dapat berjalannya fitur hot reload dan stuck pada 
+
+```Observatory Listening on *********************```
+
+seperti gambar di bawah. Hal ini dikarenakan VIVO menyembunyikan beberapa log informasi private dengan wrap ****. Cara mengatasinya adalah dengan menghubungi official authorization VIVO berdasarkan sumber berikut:
+https://siwing.github.io/Flutter/Vivo%20phone%20system%20log%20output%20problem.html.
+
+![Vivo Error](docs/Vivo_error.png)
+
 Kemudian pada bagian selanjutnya, menambahkan sebuah widget MyImageWidget untuk menampilkan logo polinema, namun terdapat kendala bahwa tidak dapat ditampilkan di device android fisik saya, sehingga saya harus menjalankan di chrome menggunakan command ```flutter run -d chrome``` dengan output sebagai berikut:
 
 ![Praktikum 3](docs/03_2.png)
 
 ## Praktikum 4
 
-Kemudian pada praktikum 4 menerapkan berbagai macam widget dari Material Design dan iOS Cupertino. Berikut merupakan contoh output penerapan widget untuk Date Picker.
+Kemudian pada praktikum 4 menerapkan berbagai macam widget dari Material Design dan iOS Cupertino. Berikut merupakan beberapa hasil output widget yang telah diterapkan.
+
+Cupertino Button dan Loading Bar
+
+![Praktikum 4](docs/CuppertinoLoading.jpg)
+
+Floating Action Button (FAB)
+
+![Praktikum 4](docs/FAB.jpg)
+
+Date Picker dan Time Picker
 
 ![Praktikum 4](docs/04.jpg)
 
