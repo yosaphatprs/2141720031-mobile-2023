@@ -1,4 +1,7 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flutter/material.dart';
+// ignore: unnecessary_import
 import 'package:flutter/cupertino.dart';
 
 class MyFabWidget extends StatelessWidget {
