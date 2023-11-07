@@ -11,3 +11,4 @@
 | 05 | [Minggu 5 - Flutter Fundamental.](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-05) |
 | 07 | [Minggu 7 - Layout Flutter.](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-07) |
 | 08 | [Minggu 8 - Navigasi dan Rute.](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-08) |
+| 10 | [Minggu 10 - Manajemen Plugin](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-10) |
