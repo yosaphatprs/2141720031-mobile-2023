@@ -8,6 +8,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 1](#praktikum-1-dasar-state-dengan-model-view)
 - [Tugas Praktikum 1](#tugas-praktikum-1)
+- [Praktikum 2](#praktikum-2-mengelola-data-layer-dengan-inheritedwidget-dan-inheritednotifier)
+- [Tugas Praktikum 2](#tugas-praktikum-2)
 
 ## Praktikum 1 Dasar State dengan Model-View
 
@@ -16,14 +18,17 @@ Program yang akan dibuat pada praktikum ini adalah sebuah program yang berfungsi
 1. Output Langkah 9
 
     Screenshot:
+
     ![Output Langkah 9](docs/praktikum_1_9.png)
 
     GIF:
+
     ![Output Langkah 9](docs/praktikum_1_9.gif)
 
     Hingga langkah 9, program telah berhasil dibuat dan dapat menambahkan plan baru serta mengubah status ceklis pada plan tersebut. Namun saat terdapat plan yang cukup banyak dan mengakibatkan layar perlu untuk di-_scroll_ maka ketika kita ingin mencari plan yang diisi akan terhalangi oleh keyboard yang tetap muncul. Hal ini akan diperbaiki pada langkah selanjutnya.
 
 2. Output Hasil
+
    ![Output Hasil](docs/praktikum_1_hasil.gif)
 
    Dengan beberapa perubahan seperti menambahkan scrollController yang akan menghapus focus pada masing-masing text field ketika melakukan scroll akan membuat keyboard tidak menghalangi textfield. Sehingga hasil akhir dari program master_plan yang dibuat pada Praktikum 1 akan tampil seperti di atas
@@ -50,6 +55,7 @@ Program yang akan dibuat pada praktikum ini adalah sebuah program yang berfungsi
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
     - GIF:
+
         ![Output Langkah 9](docs/praktikum_1_9.gif)
 
         Aplikasi yang telah dibuat adalah aplikasi untuk menyimpan Plan dengan fitur penambahan plan dan ceklis yang dibuat dengan menggunakan struktur model-view.
@@ -60,3 +66,52 @@ Program yang akan dibuat pada praktikum ini adalah sebuah program yang berfungsi
     - `dispose`: methode dispose pada lifecycle state berguna untuk melakukan pembersihan data yang tidak diperlukan lagi. Method ini akan dipanggil ketika widget dihapus dari tree. Pada program ini, method ini digunakan untuk membersihkan data yang tidak diperlukan lagi pada listview yang berisi plan yang telah dibuat.
 
 6. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
+
+## Praktikum 2 Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+
+Pada praktikum 2, ditambahkan adanya penerapan InheritedWidget dan InheritedNotifier dengan adanya pembuatan sebuah file yang memiliki peran sebagai provider yaitu file plan_provider.dart. 
+
+Isi dari file plan_provider.dart itu adalah sebagai berikut:
+
+![Output Langkah 1](docs/praktikum_2_1.png)
+
+Pada praktikum kali ini tidak terdapat perubahan UI, namun hanya melakukan perubahan pada sistem state management yang lebih tepat untuk digunakan. Praktikum ini bertujuan untuk menerapkan cara memisahkan antara view dengan model secara tepat. Karena hal ini sangat penting dalam state management sebuah aplikasi.
+
+Output:
+
+![Output Praktikum 2](docs/praktikum_2_hasil.gif)
+
+## Tugas Praktikum 2
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
+
+    - Hasil akhir:
+
+        ![Output Praktikum 2](docs/praktikum_2_hasil.gif)
+
+2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+    - Yang dimaksud InheritedWidget pada langkah 1 dalam file plan_provider ada pada baris ke 11 pada screenshot berikut
+
+       ![plan_provider.dart](docs/praktikum_2_1.png)
+        
+       ```dart 
+       .dependOnInheritedWidgetOfExactType<PlanProvider>()!
+       ```
+
+       Arti dari baris diatas adalah, untuk mendapatkan instance PlanProvider yang ada dalam context widget tersebut. Kemudian terdapat tanda seru di akhir baris tersebut yang berarti hasil dari method tersebut tidak boleh null. Hal ini dilakukan karena jika hasil dari method tersebut null, maka akan program akan error.
+
+    - Sebenarnya InheritedWidget juga digunakan dalam file plan_provider.dart, seperti yang telah ditunjukkan pada point sebelumnya. Hanya saja InheritedWIdget tidak memiliki fungsi yang dapat melakukan notify widget dibawahnya secara _built-in_ sehingga diperlukan juga InheritedNotifier untuk melakukan hal tersebut.
+
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+    - Method-method yang digunakan pada langkah 3 berfungsi untuk menghitung jumlah task yang selesai dan return hasilnya. Kemudian completenessMessage berfungsi untuk menunjukkan pesan mengenai jumlah task yang telah selesai.
+
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+    - ![Output Praktikum 2](docs/praktikum_2_hasil.gif)
+    
+        Praktikum 2 ini menambahkan sebuah text dibawah yang menunjukkan jumlah task yang telah diselesaikan atau diceklis dari aplikasi Praktikum 1. Kemudian terdapat tambahan pada kode program untuk menerapkan state management yang baik dengan menggunakan InheritedWidget dan InheritedNotifier. 
+    
+
+5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
