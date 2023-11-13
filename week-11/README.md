@@ -10,6 +10,8 @@ NAMA : Josafat Pratama Susilo
 - [Tugas Praktikum 1](#tugas-praktikum-1)
 - [Praktikum 2](#praktikum-2-mengelola-data-layer-dengan-inheritedwidget-dan-inheritednotifier)
 - [Tugas Praktikum 2](#tugas-praktikum-2)
+- [Praktikum 3](#praktikum-3-membuat-state-di-multiple-screens)
+- [Tugas Praktikum 3](#tugas-praktikum-3)
 
 ## Praktikum 1 Dasar State dengan Model-View
 
@@ -115,3 +117,41 @@ Output:
     
 
 5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
+
+## Praktikum 3 Membuat State di Multiple Screens
+
+Pada Praktikum 3 ini diterapkan state management dengan multiple screen. Hasil dari praktikum 3 ini adalah sebagai berikut.
+
+![Output Praktikum 3](docs/praktikum_3_hasil.gif)
+
+Pada hasil akhir tersebut, terdapat ketidaksesuaian dengan yang seharusnya yaitu tidak berfungsinya checkbox dan tidak dapat untuk menambahkan task baru. Hal ini akan dibenahi pada tugas praktikum 3.
+
+## Tugas Praktikum 3
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+
+    - Dengan program yang berjalan kurang baik, maka perlu diperbaiki. Berdasarkan hasil dari debug console, ditemukan error sebagai berikut:
+        ![Output Error](docs/error_3.png)
+
+        Sehingga ditemukan bahwa terdapat masalah pada index yang digunakan, yaitu valuenya yang empty atau kosong. Berikut adalah perbaikan yang dilakukan.
+
+        - Mensinkronkan plan yang ada pada fungsi _buildTaskTile dengan yang ada pada _buildList yaitu dengan melakukan passing parameter plan tersebut. Perubahan:
+
+            ![Perbaikan 1](docs/perbaikan_1.png)
+
+        - Mengubah plan yang ada pada _buildAddTaskButton sesuai dengan index plan planNotifier tersebut. Perubahan:
+
+            ![Perbaikan 2](docs/perbaikan_2.png)
+        
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+    ![Tugas Praktikum 3 no. 2](docs/tugas_praktikum_3_2.png)
+
+    Diagram di atas menjelaskan mengenai bagaimana korelasi antar 2 screen yang ada dalam aplikasi yang telah dibuat. Screen pertama berupa PlanCreatorScreen yang merupakan turunan dari PlanProvider dalam struktur widget tree. Di dalam PlanCreatorScreen terdapat sebuah Column yang menampung widget-widget di dalamnya. Korelasi yang ada adalah, PlanScreen dituju melalui PlanCreatorScreen menggunaakn Navigator Push. Sehingga PlanProvider tetap dapat diakses oleh PlanScreen.
+
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+    Berikut merupakan hasil akhir dari program yang telah dibuat.
+    ![Hasil Akhir](docs/hasil_akhir.gif)
+
+    Beberapa yang telah dibuat pada Praktikum 3 adalah mengubah plan menjadi list plan pada plan provider karena akan dibuat plan-plan yang akan menampung beberapa task. Kemudian membuat sebuah screen plan_creator_screen yang digunakan untuk menambahkan plan-plan. Ketika plan ditekan akan menuju pada halaman task-task dari plan tersebut yaitu screen plan_screen.
