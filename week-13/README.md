@@ -48,3 +48,11 @@ NAMA : Josafat Pratama Susilo
     Maksud dari perintah kode tersebut adalah untuk mendapatkan nilai berupa Color setiap 1 detik. 
 
 3. Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
+
+**Soal 4**
+
+1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 1 Soal 4](docs/praktikum_1_soal4.gif)
+
+2. Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
