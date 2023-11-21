@@ -10,6 +10,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 2 : Menggunakan await/async untuk menghindari callbacks](#praktikum-2-menggunakan-awaitasync-untuk-menghindari-callbacks)
 
+- [Praktikum 3 : Menggunakan Completer di Future](#praktikum-3-menggunakan-completer-di-future)
+
 ## Praktikum 1 Mengunduh Data dari Web Service (API)
 
 1. Menambahkan package `http` pada `pubspec.yaml`
@@ -53,3 +55,15 @@ NAMA : Josafat Pratama Susilo
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
 
     ![Praktikum 2 Hasil](docs/praktikum_2_hasil.gif)
+
+## Praktikum 3: Menggunakan Completer di Future
+
+**Soal 5**
+
+1. Jelaskan maksud kode langkah 2 tersebut!
+
+    - Maksud dari kode diatas adalah untuk membuat sebuah fungsi calculate() yang mengembalikan nilai Future. Nilai itu dikembalikan dengan memanggil fungsi method complete pada completer. Nilai yang dikembalikan sesuai dengan tipe data Completer yaitu int bernilai 42.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+    ![Praktikum 3 Hasil Soal 5](docs/praktikum_3_soal5.gif)
