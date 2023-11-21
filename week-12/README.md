@@ -14,6 +14,10 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 4 : Memanggil Future secara paralel](#praktikum-4-memanggil-future-secara-paralel)
 
+- [Praktikum 5 : Menangani Respon Error pada Async Code](#praktikum-5-menangani-respon-error-pada-async-code)
+
+- [Praktikum 6 : Menggunakan Future dengan StatefulWidget](#praktikum-6-menggunakan-future-dengan-statefulwidget)
+
 ## Praktikum 1 Mengunduh Data dari Web Service (API)
 
 1. Menambahkan package `http` pada `pubspec.yaml`
@@ -101,3 +105,27 @@ NAMA : Josafat Pratama Susilo
 1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 
     ![Praktikum 5 Hasil Soal 9](docs/praktikum_5_soal9.gif)
+
+**Soal 10**
+
+1. Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+    - Berdasarkan hasil dari output yang didapat, tidak ada perbedaan pada jalannya program. Perbedaan yang ada hanya dari penggunaan try and catch pada langkah 4, sedangkan pada langkah 1 menggunakan .then.catchError().
+
+## Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+**Soal 11**
+
+1. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+    ![Praktikum 6 Soal 11](docs/praktikum_6_soal11.png)
+
+**Soal 12**
+
+1. Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+
+2. Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+3. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+
+    ![Praktikum 6 Soal 12](docs/praktikum_6_soal12.gif)
