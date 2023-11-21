@@ -56,3 +56,11 @@ NAMA : Josafat Pratama Susilo
     ![Praktikum 1 Soal 4](docs/praktikum_1_soal4.gif)
 
 2. Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
+
+**Soal 5**
+
+1. Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
+
+    Perbedaan dari listen dan await for adalah bagaimana cara kerja kedua method tersebut. Await for akan menjalankan stream tersebut hingga stream tersebut selesai, sehingga cocok untuk digunakan pada stream yang memiliki jumlah data terbatas/finite. Sedangkan listen akan meregister stream tersebut terlebih dahulu baru akan menjalankan stream tersebut, sehingga cocok untuk digunakan pada stream yang memiliki jumlah data yang tidak pasti.
+
+2. Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
