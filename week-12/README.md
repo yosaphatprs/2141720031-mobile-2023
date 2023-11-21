@@ -129,3 +129,17 @@ NAMA : Josafat Pratama Susilo
 3. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 
     ![Praktikum 6 Soal 12](docs/praktikum_6_soal12.gif)
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+
+**Soal 13**
+
+1. Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+    - Tidak ada perbedaan UI karena kode yang diubah hanyalah kode untuk merubah logic dari program.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+
+    ![Praktikum 7 Soal 13](docs/praktikum_7_soal13.gif)
+
+3. Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
