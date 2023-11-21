@@ -37,3 +37,14 @@ NAMA : Josafat Pratama Susilo
     ```
 2. Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
 
+**Soal 3**
+
+1. Jelaskan fungsi keyword yield* pada kode tersebut!
+
+    Keyword yield* digunakan untuk melakukan return dari sebuah fungsi generator. Pada kode tersebut fungsi generator yang dimaksud adalah Stream.periodic yang akan mengembalikan colors setiap 1 detik. Dengan adanya yield ini maka ketika fungsi Stream.periodic melakukan return colors, fungsi Stream.periodic akan tetap berjalan walau telah melakukan return karena yield yang akan mengembalikan nilai dari fungsi tersebut. Tanda bintang setelah keyword yield menandakan bahwa nilai yang dikembalikan bukan hanya satu melainkan sebuah stream.
+
+2. Apa maksud isi perintah kode tersebut?
+
+    Maksud dari perintah kode tersebut adalah untuk mendapatkan nilai berupa Color setiap 1 detik. 
+
+3. Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
