@@ -67,3 +67,13 @@ NAMA : Josafat Pratama Susilo
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
 
     ![Praktikum 3 Hasil Soal 5](docs/praktikum_3_soal5.gif)
+
+**Soal 6**
+
+1. Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+
+    - Perbedaannya pada langkah 5-6 menggunakan try and catch sehingga jika terdapat error akan lebih mudah melakukan handle error tersebut.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+
+    ![Praktikum 3 Hasil Soal 6](docs/praktikum_3_soal6.gif)
