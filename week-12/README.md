@@ -183,3 +183,15 @@ NAMA : Josafat Pratama Susilo
     ![Praktikum 8 Soal 16](docs/praktikum_8_soal16.gif)
 
 ## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+
+**Soal 17**
+
+1. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+    - Jika di klik button change color akan menampilkan pop up dialog dan berisi button yang ketika ditekan akan merubah background color dari halaman itu. Pada awalnya program tidak dapat berjalan dengan baik karena perubahan warna terdapat delay dan terkadang tidak berubah warna. Hal ini diatasi dengan menambahkan setState di dalam _showColorDialog().
+
+2. Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+
+3. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+
+    ![Praktikum 9 Soal 17](docs/praktikum_9_soal17.gif)
