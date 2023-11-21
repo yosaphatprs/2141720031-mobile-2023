@@ -18,6 +18,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 6 : Menggunakan Future dengan StatefulWidget](#praktikum-6-menggunakan-future-dengan-statefulwidget)
 
+- [Praktikum 7 : Manajemen Future dengan FutureBuilder](#praktikum-7-manajemen-future-dengan-futurebuilder)
+
 ## Praktikum 1 Mengunduh Data dari Web Service (API)
 
 1. Menambahkan package `http` pada `pubspec.yaml`
@@ -143,3 +145,13 @@ NAMA : Josafat Pratama Susilo
     ![Praktikum 7 Soal 13](docs/praktikum_7_soal13.gif)
 
 3. Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+**Soal 14**
+
+1. Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
+    - Tidak ada perubahan, karena hanya menambahkan error handling, mungkin terdapat perbedaan jika terdapat error yang akan menampilkan text "Something terrible happened!".
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+    ![Praktikum 7 Soal 14](docs/praktikum_7_soal14.gif)
