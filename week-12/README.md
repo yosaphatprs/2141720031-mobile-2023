@@ -87,3 +87,17 @@ NAMA : Josafat Pratama Susilo
 1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
 
     ![Praktikum 4 Hasil Soal 7](docs/praktikum_4_soal7.gif)
+
+**Soal 8**
+
+1. Jelaskan maksud perbedaan kode langkah 1 dan 4!
+
+    - Perbedaan dari kode langkah 1 dan 4 adalah pada langkah 1 menggunakan futureGroup untuk menjalankan future secara paralel sedangkan pada langkah 4 menggunakan method Future.wait
+
+## Praktikum 5: Menangani Respon Error pada Async Code
+
+**Soal 9**
+
+1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+
+    ![Praktikum 5 Hasil Soal 9](docs/praktikum_5_soal9.gif)

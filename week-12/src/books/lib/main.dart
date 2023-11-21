@@ -50,13 +50,19 @@ class _FuturePageState extends State<FuturePage> {
   }
 
   void returnFG() {
-    FutureGroup<int> futureGroup = FutureGroup<int>();
-    futureGroup.add(returnOneAsync());
-    futureGroup.add(returnTwoAsync());
-    futureGroup.add(returnThreeAsync());
-    futureGroup.close();
+    // FutureGroup<int> futureGroup = FutureGroup<int>();
+    // futureGroup.add(returnOneAsync());
+    // futureGroup.add(returnTwoAsync());
+    // futureGroup.add(returnThreeAsync());
+    // futureGroup.close();
 
-    futureGroup.future.then((List<int> value) {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+
+    futures.then((List<int> value) {
       int total = 0;
       for (var element in value) {
         total += element;
@@ -65,6 +71,11 @@ class _FuturePageState extends State<FuturePage> {
         result = total.toString();
       });
     });
+  }
+
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
   }
 
   Future<int> returnOneAsync() async {
@@ -129,7 +140,16 @@ class _FuturePageState extends State<FuturePage> {
                 // }).catchError((e) {
                 //   result = 'An error occurred';
                 // });
-                returnFG();
+                // returnFG();
+                returnError().then((value) {
+                  setState(() {
+                    result = 'Success';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
               },
               child: const Text("GO!")),
           const Spacer(),
