@@ -20,6 +20,10 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 7 : Manajemen Future dengan FutureBuilder](#praktikum-7-manajemen-future-dengan-futurebuilder)
 
+- [Praktikum 8 : Navigation route dengan Future Function](#praktikum-8-navigation-route-dengan-future-function)
+
+- [Praktikum 9 : Memanfaatkan async/await dengan Widget Dialog](#praktikum-9-memanfaatkan-asyncawait-dengan-widget-dialog)
+
 ## Praktikum 1 Mengunduh Data dari Web Service (API)
 
 1. Menambahkan package `http` pada `pubspec.yaml`
@@ -155,3 +159,27 @@ NAMA : Josafat Pratama Susilo
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
 
     ![Praktikum 7 Soal 14](docs/praktikum_7_soal14.gif)
+
+## Praktikum 8: Navigation route dengan Future Function
+
+**Soal 15**
+
+1. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+2. Silakan ganti dengan warna tema favorit Anda.
+
+    ![Praktikum 8 Soal 15](docs/praktikum_8_soal15.png)
+
+**Soal 16**
+
+1. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+    - Jika di klik button change color akan berpindah halaman, dan di halaman berikutnya terdapat button untuk mengubah warna background halaman pertama dan kembali ke halaman pertama.
+
+2. Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+3. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+    ![Praktikum 8 Soal 16](docs/praktikum_8_soal16.gif)
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
