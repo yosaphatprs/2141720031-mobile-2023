@@ -12,6 +12,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 3 : Menggunakan Completer di Future](#praktikum-3-menggunakan-completer-di-future)
 
+- [Praktikum 4 : Memanggil Future secara paralel](#praktikum-4-memanggil-future-secara-paralel)
+
 ## Praktikum 1 Mengunduh Data dari Web Service (API)
 
 1. Menambahkan package `http` pada `pubspec.yaml`
@@ -77,3 +79,11 @@ NAMA : Josafat Pratama Susilo
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
 
     ![Praktikum 3 Hasil Soal 6](docs/praktikum_3_soal6.gif)
+
+## Praktikum 4: Memanggil Future secara paralel
+
+**Soal 7**
+
+1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
+
+    ![Praktikum 4 Hasil Soal 7](docs/praktikum_4_soal7.gif)
