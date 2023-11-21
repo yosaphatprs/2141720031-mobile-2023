@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:math';
 import 'stream.dart';
 
 void main() {
@@ -30,6 +32,9 @@ class StreamHomePage extends StatefulWidget {
 class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.blueGrey;
   late ColorStream colorsStream;
+  int lastNumber = 0;
+  late StreamController numberStreamController;
+  late NumberStream numberStream;
 
   void changeColor() async {
     // await for (var eventColor in colorsStream.getColors()) {
@@ -44,11 +49,26 @@ class _StreamHomePageState extends State<StreamHomePage> {
     });
   }
 
+  void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
+  }
+
   @override
   void initState() {
     super.initState();
-    colorsStream = ColorStream();
-    changeColor();
+    // super.initState();
+    // colorsStream = ColorStream();
+    // changeColor();
+    numberStream = NumberStream();
+    numberStreamController = numberStream.controller;
+    Stream stream = numberStreamController.stream;
+    stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
   }
 
   @override
@@ -57,8 +77,26 @@ class _StreamHomePageState extends State<StreamHomePage> {
         appBar: AppBar(
           title: const Text('Stream - Yosa'),
         ),
-        body: Container(
-          decoration: BoxDecoration(color: bgColor),
+        body: SizedBox(
+          width: double.infinity,
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(lastNumber.toString()),
+                ElevatedButton(
+                    onPressed: () => addRandomNumber(),
+                    child: Text('New Random Number'))
+              ]),
         ));
+    // Container(
+    //   decoration: BoxDecoration(color: bgColor),
+    // ));
+  }
+
+  @override
+  void dispose() {
+    numberStreamController.close();
+    super.dispose();
   }
 }

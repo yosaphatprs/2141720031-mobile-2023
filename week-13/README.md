@@ -8,6 +8,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 1: Dart Streams](#praktikum-1-dart-streams)
 
+- [Praktikum 2: Stream controllers dan sinks](#praktikum-2-stream-controllers-dan-sinks)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -64,3 +66,19 @@ NAMA : Josafat Pratama Susilo
     Perbedaan dari listen dan await for adalah bagaimana cara kerja kedua method tersebut. Await for akan menjalankan stream tersebut hingga stream tersebut selesai, sehingga cocok untuk digunakan pada stream yang memiliki jumlah data terbatas/finite. Sedangkan listen akan meregister stream tersebut terlebih dahulu baru akan menjalankan stream tersebut, sehingga cocok untuk digunakan pada stream yang memiliki jumlah data yang tidak pasti.
 
 2. Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
+
+## Praktikum 2: Stream controllers dan sinks
+
+**Soal 6**
+
+1. Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+    Kode langkah 8 berguna untuk menginisiasi state yang akan digunakan, inisiasi tersebut membuat numberStream yang merupakan objek dari class NumberStream. Dengan numberStream tersebut, dibuat sebuah stream yang dapat digunakan pada class _StreamHomePageState.
+
+    Kode langkah 10 berfungsi untuk generate angka acak kemudian mengirimkan angka tersebut ke dalam stream yang ada menggunakan fungsi addNumberToSink.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 2 Soal 6](docs/praktikum_2_soal6.gif)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
