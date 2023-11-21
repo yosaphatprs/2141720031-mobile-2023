@@ -13,3 +13,4 @@
 | 08 | [Minggu 8 - Navigasi dan Rute.](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-08) |
 | 10 | [Minggu 10 - Manajemen Plugin](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-10) |
 | 11 | [Minggu 11 - Dasar State Management](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-11) |
+| 12 | [Minggu 12 - Pemrograman Asynchronous](https://github.com/yosaphatprs/2141720031-mobile-2023/tree/main/week-12)
