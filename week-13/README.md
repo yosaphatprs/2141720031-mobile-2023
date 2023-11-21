@@ -19,3 +19,21 @@ NAMA : Josafat Pratama Susilo
     ![Praktikum 1 Soal 1](docs/praktikum_1_soal1.png)
 
 3. Lakukan commit hasil jawaban Soal 1 dengan pesan "W13: Jawaban Soal 1"
+
+**Soal 2**
+
+1. Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+
+    ![Praktikum 1 Soal 2](docs/praktikum_1_soal2.png)
+
+    Warna yang ditambahkan adalah sebagai berikut:
+
+    ```dart
+    Colors.deepOrange,
+    Colors.lightGreen,
+    Colors.indigo,
+    Colors.lime,
+    Colors.redAccent,
+    ```
+2. Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
