@@ -82,3 +82,13 @@ NAMA : Josafat Pratama Susilo
     ![Praktikum 2 Soal 6](docs/praktikum_2_soal6.gif)
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
+
+**Soal 7**
+
+1. Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+    Pada langkah 13, membuat sebuah fungsi untuk menambahkan error ke sink. Kemudian pada langkah 14 mengimplementasikannya pada onError, jika error akan mengatus angka ke negatif 1. Kemudian pada langkah 15, menambahkan error ke fungsi addRandomNumber()
+
+2. Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
