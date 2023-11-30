@@ -10,6 +10,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 2: Stream controllers dan sinks](#praktikum-2-stream-controllers-dan-sinks)
 
+- [Praktikum 3: Injeksi data ke streams](#praktikum-3-injeksi-data-ke-streams)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -92,3 +94,17 @@ NAMA : Josafat Pratama Susilo
 2. Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
+s
+## Praktikum 3: Injeksi data ke streams
+
+**Soal 8**
+
+1. Jelaskan maksud kode langkah 1-3 tersebut!
+
+    - Maksud dari penggunaan StreamTransformer adalah, untuk memanipulasi data yang ada pada stream. Pada langkah kedua, StreamTransformer diinisialisasi dalam initstate. Kemudian, stream yang ada, akan melalui transformer yang telah dibuat dan listen ke pada event-event yang berlangsung.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 3 Soal 8](docs/praktikum_3_soal8.gif)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
