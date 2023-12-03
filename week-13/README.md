@@ -16,6 +16,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 5: Multiple stream subscriptions](#praktikum-5-multiple-stream-subscriptions)
 
+- [Praktikum 6: StreamBuilder](#praktikum-6-streambuilder)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -148,3 +150,17 @@ s
     ![Praktikum 5 Soal 11](docs/praktikum_5_soal11.gif)
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
+
+## Praktikum 6: StreamBuilder
+
+**Soal 12**
+
+1. Jelaskan maksud kode pada langkah 3 dan 7!
+
+    Langkah 3 berfungsi untuk membuat stream yang akan generate angka random setiap 1 detik, sedangkan langkah 7 berfungsi untuk implementasi stream menggunakan StreamBuilder. Ketika terdapat error maka akan melakukan log, jika snapsot memiliki data, maka akan menampilkan data tersebut.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 6 Soal 12](docs/praktikum_6_soal12.gif)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
