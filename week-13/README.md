@@ -12,6 +12,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 3: Injeksi data ke streams](#praktikum-3-injeksi-data-ke-streams)
 
+- [Praktikum 4: Subscribe ke stream events](#praktikum-4-subscribe-ke-stream-events)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -108,3 +110,19 @@ s
     ![Praktikum 3 Soal 8](docs/praktikum_3_soal8.gif)
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+
+## Praktikum 4: Subscribe ke stream events
+
+**Soal 9**
+
+1. Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+    Penerapan subscription merupakan _best practice_ menghandle event dan eror yang ada dalam stream. Langkah 2 merupakan proses ```listen``` kepada stream yang ada. Kemudian langkah 6 adalah proses menutup subscription dalam stream tersebut dalam fungsi dispose. Langkah 8 melakukan edit pada fungsi ketika menambahkan random number, edit tersebut memiliki arti bahwa ketika stream telah ditutup melalui fungsi stopStream(), maka angka akan menjadi -1.
+ 
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 4 Soal 9](docs/praktikum_4_soal9.gif)
+
+    ![Praktikum 4 Soal 9](docs/praktikum_4_soal9.png)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
