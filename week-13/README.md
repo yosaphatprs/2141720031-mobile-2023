@@ -14,6 +14,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 4: Subscribe ke stream events](#praktikum-4-subscribe-ke-stream-events)
 
+- [Praktikum 5: Multiple stream subscriptions](#praktikum-5-multiple-stream-subscriptions)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -126,3 +128,23 @@ s
     ![Praktikum 4 Soal 9](docs/praktikum_4_soal9.png)
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+
+## Praktikum 5: Multiple stream subscriptions
+
+**Soal 10**
+
+1. Jelaskan mengapa error itu bisa terjadi ?
+
+    Error itu dapat terjadi karena ada 2 subscription yang berjalan secara bersamaan untuk melakukan listen terhadap stream tersebut.
+
+**Soal 11**
+
+1. Jelaskan mengapa hal itu bisa terjadi ?
+
+    Hal tersebut dapat terjadi karena terdapat terdapat 2 stream yang melakukan listen terhadap stream yang sama melalui broadcast. Hal tersebut menyebabkan setiap kali ada event klik pada button, maka 2 subscription akan menghandle event tersebut. Setelah itu, variable values akan ditampilkan sesuai pada langkah 5.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 5 Soal 11](docs/praktikum_5_soal11.gif)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
