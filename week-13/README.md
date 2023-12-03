@@ -18,6 +18,8 @@ NAMA : Josafat Pratama Susilo
 
 - [Praktikum 6: StreamBuilder](#praktikum-6-streambuilder)
 
+- [Praktikum 7: BLoC Pattern](#praktikum-7-bloc-pattern)
+
 ## Praktikum 1: Dart Streams
 
 **Soal 1**
@@ -164,3 +166,15 @@ s
     ![Praktikum 6 Soal 12](docs/praktikum_6_soal12.gif)
 
 3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
+
+## Praktikum 7: BLoC Pattern
+
+1. Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+
+    Pada praktikum ini, konsep BLoC diterapkan dalam file random_bloc.dart untuk menghasilkan stream yang melakukan generate angka random. Pada file random_screen, variabel _bloc digunakan untuk menginisialisasi objek dari random_bloc, dan StreamBuilder digunakan untuk menangani stream yang dihasilkan oleh random_bloc tersebut. Terdapat juga tombol refresh yang berfungsi untuk menghasilkan angka acak baru dengan memanggil fungsi sink pada _generateRandomController yang terdapat dalam random_bloc.dart.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![Praktikum 7 Soal 13](docs/praktikum_7_soal13.gif)
+
+3. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
